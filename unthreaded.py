@@ -90,6 +90,5 @@ for time in range(1000):
 
               with open('info.json', 'w') as f:
                 json.dump(data, f)
-    except Exception as e:
-      print (str(e))
+    except:
       continue

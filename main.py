@@ -88,6 +88,7 @@ def worker(ID):
 data = {}
 duration = 1
 threads = int(input("Threads: "))
+os.mkdir('phrases')
 
 q = queue.Queue()
 

@@ -35,7 +35,7 @@ def alphabetical(char):
   return ord(char) >= 97 and ord(char) <= 122 or ord(char) == 32
   
 def move(filepath, target):
-  os.system("mv %s %s" % (filepath, target))
+  os.rename(filepath, target)
   
 def worker(ID):
   global data
